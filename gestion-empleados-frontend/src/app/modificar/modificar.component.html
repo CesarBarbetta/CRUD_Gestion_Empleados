@@ -1,0 +1,31 @@
+<div class="container">
+  <button class="btn btn-dark" [routerLink]="['/inicio']" routerLinkActive="router-link-active">🢀 Volver</button> <br> <br>
+
+  <form action="">
+    <div class="mb-3">
+      <label for="name" class="form-label">Nombre: </label>
+        <div class="input-group mb-3">
+          <input type="text" class="form-control" id="name" name="name" designation="name" salary="name" [(ngModel)]="empleadoActual.name">
+        </div>
+    </div>
+
+    <div class="mb-3">
+      <label for="designation" class="form-label">Designación: </label>
+        <div class="input-group mb-3">
+          <input type="text" class="form-control" id="designation" name="designation" designation="designation" salary="designation" [(ngModel)]="empleadoActual.designation">
+        </div>
+    </div>
+
+    <div class="mb-3">
+      <label for="salary" class="form-label">Salario: </label>
+        <div class="input-group mb-3">
+          <input type="number" class="form-control" id="salary" name="salary" designation="salary" salary="salary" [(ngModel)]="empleadoActual.salary">
+        </div>
+      </div>
+
+  </form>
+  <br>
+  <button class="btn btn-success" (click)="guardarEmpleado()">Guardar</button>
+
+</div>
+
